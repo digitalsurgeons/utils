@@ -10,5 +10,19 @@
   "keywords": [
     "utility",
     "helper"
-  ]
+  ],
+  "devDependencies": {
+    "tape": "^4.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dsurgeons/ds-utils/issues"
+  },
+  "homepage": "https://github.com/dsurgeons/ds-utils#readme",
+  "dependencies": {
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "license": "ISC"
 }
