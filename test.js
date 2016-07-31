@@ -38,8 +38,9 @@ const setIntervalFrame = require('./set-interval-frame');
 test('set-interval-frame', function (t) {
 	t.plan(1);
 
-	setIntervalFrame(function () {
+	const id = setIntervalFrame(function () {
 		t.pass('passed in 2 seconds');
+		clearInterval(id);
 	}, 2000);
 });
 
@@ -47,7 +48,8 @@ const setTimeoutFrame = require('./set-timeout-frame');
 test('set-interval-frame', function (t) {
 	t.plan(1);
 
-	setTimeoutFrame(function () {
+	const id = setTimeoutFrame(function () {
 		t.pass('passed in 2 seconds');
+		clearInterval(id);
 	}, 2000);
 });
