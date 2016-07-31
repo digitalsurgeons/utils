@@ -5,16 +5,15 @@ Digital Surgeons utility modules
 **Installation**
 
 	$ npm install ds-utils
-	
+
 **Example Usage**
 
 	var Utils = {
-		map: require('ds-utils/map'),
-		hexMix: require('ds-utils/haxMix')
+		rangeMap: require('ds-utils/range-map'),
+		hexMix: require('ds-utils/hex-mix')
 	};
-	
+
 **Module List**
 
-- `map()` - map a value from one range to another
-- `hexMix()` - return hex value at % point between two colors
-	
+- `range-map` - map a value from one range to another
+- `hex-mix` - return hex value at % point between two colors
