@@ -1,13 +1,13 @@
 const test = require('tape');
 
-// map - map a value from one range to another
-const map = require('./range-map');
+// range-map - map a value from one range to another
+const rangeMap = require('./range-map');
 
-test('map()', function(t) {
+test('range-map', function(t) {
 	t.plan(1);
 
 	const expected = 75;
-	const res = map(5, {
+	const res = rangeMap(5, {
 		min: 0,
 		max: 10
 	}, {
@@ -18,9 +18,9 @@ test('map()', function(t) {
 	t.same(res, expected);
 });
 
-// hexMix - return hex value at % point between two colors
+// hex-mix - return hex value at % point between two colors
 const hexMix = require('./hex-mix');
-test('hexMix()', function(t) {
+test('hex-mix', function(t) {
 	t.plan(1);
 
 	const expected = '#F07157';

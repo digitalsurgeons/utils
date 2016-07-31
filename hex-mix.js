@@ -1,7 +1,7 @@
 /*
-* hexMix - return hex value at % point between two colors
+* hex-mix - return hex value at % point between two colors
 *
-* hexMix(.5, {from: '#f39631', to: '#ed4c7c'}) // #F07157
+* func(.5, {from: '#f39631', to: '#ed4c7c'}) // #F07157
 */
 module.exports = function(perc, colors) {
 	const hex = function(x) {
