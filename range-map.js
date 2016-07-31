@@ -5,4 +5,4 @@
 */
 module.exports = function(val, inRange, outRange) {
 	return (val - inRange.min) * (outRange.max - outRange.min) / (inRange.max - inRange.min) + outRange.min;
-}
+};
