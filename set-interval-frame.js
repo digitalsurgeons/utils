@@ -1,7 +1,7 @@
 /*
-* set-interval-frame -
+* set-interval-frame - run callback in request animation frame every setInterval
 *
-* func() //
+* func(() => { console.log('Hi'); }, 200) // Print hi every 200ms
 */
 module.exports = function(func, delay = 0) {
 	if(typeof func !== 'function') {

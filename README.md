@@ -17,3 +17,5 @@ Digital Surgeons utility modules
 
 - `range-map` - map a value from one range to another
 - `hex-mix` - return hex value at % point between two colors
+- `set-timeout-frame` - run callback in request animation frame after setTimeout
+- `set-interval-frame` - run callback in request animation frame every setInterval
