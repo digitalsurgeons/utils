@@ -44,6 +44,7 @@ test('set-interval-frame', function (t) {
 	}, 2000);
 });
 
+// set-timeout-frame - run callback in request animation frame after setTimeout
 const setTimeoutFrame = require('./set-timeout-frame');
 test('set-interval-frame', function (t) {
 	t.plan(1);
