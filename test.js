@@ -1,4 +1,5 @@
 const test = require('tape');
+const requestAnimationFrame = global.requestAnimationFrame = require('raf');
 
 // range-map - map a value from one range to another
 const rangeMap = require('./range-map');
@@ -24,10 +25,29 @@ test('hex-mix', function(t) {
 	t.plan(1);
 
 	const expected = '#F07157';
-	const res = hexMix(.5, {
+	const res = hexMix(0.5, {
 		from: '#f39631',
 		to: '#ed4c7c'
 	});
 
 	t.same(res, expected);
+});
+
+// set-interval-frame - run callback in request animation frame every setIntervals
+const setIntervalFrame = require('./set-interval-frame');
+test('set-interval-frame', function (t) {
+	t.plan(1);
+
+	setIntervalFrame(function () {
+		t.pass('passed in 2 seconds');
+	}, 2000);
+});
+
+const setTimeoutFrame = require('./set-timeout-frame');
+test('set-interval-frame', function (t) {
+	t.plan(1);
+
+	setTimeoutFrame(function () {
+		t.pass('passed in 2 seconds');
+	}, 2000);
 });
