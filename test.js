@@ -35,22 +35,42 @@ test('hex-mix', function(t) {
 
 // set-interval-frame - run callback in request animation frame every setIntervals
 const setIntervalFrame = require('./set-interval-frame');
-test('set-interval-frame', function (t) {
+test('set-interval-frame', function(t) {
 	t.plan(1);
 
-	const id = setIntervalFrame(function () {
-		t.pass('passed in 2 seconds');
+	const id = setIntervalFrame(function() {
+		t.pass('passed in 1 second');
 		clearInterval(id);
 	}, 2000);
 });
 
 // set-timeout-frame - run callback in request animation frame after setTimeout
 const setTimeoutFrame = require('./set-timeout-frame');
-test('set-interval-frame', function (t) {
+test('set-interval-frame', function(t) {
 	t.plan(1);
 
-	const id = setTimeoutFrame(function () {
-		t.pass('passed in 2 seconds');
+	const id = setTimeoutFrame(function() {
+		t.pass('passed in 1 second');
 		clearInterval(id);
 	}, 2000);
+});
+
+// deisplay-fade -
+const displayFade = require('./display-fade');
+test('display-fade-in', function(t) {
+	t.plan(1);
+
+	const id = displayFade.in({style: {display: '', opacity: 0}}, function() {
+		t.pass('faded in after 1 second');
+		clearInterval(id);
+	}, 1000);
+});
+
+test('display-fade-out', function(t) {
+	t.plan(1);
+
+	const id = displayFade.out({style: {display: '', opacity: 0}}, function() {
+		t.pass('faded out after 1 second');
+		clearInterval(id);
+	}, 1000);
 });
