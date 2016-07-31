@@ -12,6 +12,7 @@
     "helper"
   ],
   "devDependencies": {
+    "raf": "^3.2.0",
     "tape": "^4.6.0"
   },
   "bugs": {
