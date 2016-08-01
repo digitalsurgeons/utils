@@ -19,4 +19,4 @@ Digital Surgeons utility modules
 - `hex-mix` - return hex value at % point between two colors
 - `set-timeout-frame` - run callback in request animation frame after setTimeout
 - `set-interval-frame` - run callback in request animation frame every setInterval
-- `display-block` - Fade in / out methods, set display followed by opacity after short delay. Ensure elements have trasnition set in CSS 
+- `display-block` - Fade DOM elements in / out. Set display property first followed by opacity after short delay. Ensure elements have transition set in CSS. 
