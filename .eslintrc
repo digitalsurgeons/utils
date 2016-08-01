@@ -35,6 +35,7 @@
       2,
       "_this"
     ],
+    "semi": 2,
     "one-var": 0,
     "comma-dangle": 0,
     "quote-props": 0,

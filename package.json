@@ -1,6 +1,6 @@
 {
   "name": "ds-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Digital Surgeons utility modules",
   "author": "Digital Surgeons",
   "repository": {
@@ -10,5 +10,20 @@
   "keywords": [
     "utility",
     "helper"
-  ]
+  ],
+  "devDependencies": {
+    "raf": "^3.2.0",
+    "tape": "^4.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dsurgeons/ds-utils/issues"
+  },
+  "homepage": "https://github.com/dsurgeons/ds-utils#readme",
+  "dependencies": {
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "license": "ISC"
 }
